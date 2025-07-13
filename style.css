@@ -1,0 +1,262 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fdf5e6;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.button {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px 16px;
+}
+
+.button:hover {
+    background-color: rgb(217, 191, 155);
+    color: black;
+    font-weight: 800;
+}
+
+/* Cafe Image */
+.img1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cafeimage {
+    position: relative;
+    width: 100%;
+}
+
+.s1, .s2, .s3 {
+    position: absolute;
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: 500;
+    font-size: larger;
+    padding: 4px 8px;
+}
+
+.s1 {
+    bottom: 15px;
+    left: 5px;
+}
+
+.s2 {
+    bottom: 15px;
+    right: 15px;
+}
+
+.s3 {
+    top: 60%;
+    left: 18%;
+    right: 20%;
+    background-color: lightseagreen;
+    color: brown;
+    font-style: italic;
+    font-size: 300%;
+    text-align: center;
+    padding: 10px;
+}
+
+/* About Section */
+.ABOUT1 {
+    width: 90%;
+    background-color: bisque;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.v1 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.quote {
+    background-color: rgba(119, 136, 153, 0.507);
+    padding: 5px;
+    border-left: 4px solid black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.p1 {
+    font-size: 25px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.dinning img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Menu Section */
+.MENU1 {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff8e7;
+}
+
+.cafe-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.cafe-tag {
+    background-color: #000;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.cafe-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cafe-tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px 16px;
+    background: #616161;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cafe-tab-active,
+.cafe-tab:hover {
+    background: #000;
+}
+
+.cafe-panel {
+    display: none;
+    padding: 32px 16px;
+}
+
+.cafe-panel-active {
+    display: block;
+}
+
+.cafe-item {
+    margin-bottom: 24px;
+}
+
+.cafe-item h3 {
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.cafe-desc {
+    color: #757575;
+}
+
+/* Where Section */
+.r1 {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #fdf5e6;
+    padding: 20px;
+    text-align: center;
+}
+
+.r2 {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.add1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Form */
+.box {
+    background-color: #fdf5e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin: 40px auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 32px 16px;
+    background: #f1f1f1;
+    color: #000;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

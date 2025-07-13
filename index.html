@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CAFE</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="col"><a href="#HOME" class="button">HOME</a></div>
+            <div class="col"><a href="#about" class="button">ABOUT</a></div>
+            <div class="col"><a href="#Menu" class="button">MENU</a></div>
+            <div class="col"><a href="#Where" class="button">WHERE</a></div>
+        </div>
+    </div>
+
+    <!-- Cafe Image Section -->
+    <section class="cafeimage" id="HOME">
+        <img src="./cafeimage1.avif" class="img1" alt="">
+        <div class="s1">Open from 6AM to 9PM</div>
+        <div class="s2">Banjara Hills, Hyderabad, 2015.</div>
+        <div class="s3">"The Green Brenary and The Day Dream Cafe."</div>
+    </section>
+
+    <!-- About Section -->
+    <section class="ABOUT1" id="about">
+        <div class="v1"><center>About The CAFE</center></div>
+        <p class="p1">The Greenhouse Café in Brooklyn offers American and Italian cuisine, known for its brunch and cozy ambiance, led by Executive Chef Robert Joseph. It features popular dishes like Eggs Benedict, Penne alla Vodka, and unlimited brunch cocktails. The Day Dream Cafe in Sheboygan Falls is a small, local café serving breakfast, lunch, coffee, and smoothies with rotating weekly specials. It doesn’t name a specific chef and appears to be run by a dedicated local team.</p>
+        <div class="quote">
+            <center>"Good food is the foundation of genuine happiness." – Auguste Escoffier</center>
+            <center>Chef & Founder: Akshith</center>
+        </div>
+        <div class="dinning">
+            <center><img src="./image2.jpg" alt=""></center>
+        </div>
+        <center>
+            <p><b>Opening Hours:</b> 6AM to 9PM</p>
+            <p><b>ADDRESS:</b> Banjara Hills, Hyderabad</p>
+        </center>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="MENU1" id="Menu">
+        <h2 class="cafe-title"><span class="cafe-tag">CAFÉ MENU</span></h2>
+        <div class="cafe-tabs">
+            <div class="cafe-tab cafe-tab-active" onclick="openMenu('CafeEats')">Eats</div>
+            <div class="cafe-tab" onclick="openMenu('CafeDrinks')">Drinks</div>
+        </div>
+        <div id="CafeEats" class="cafe-panel cafe-panel-active">
+            <div class="cafe-item"><h3>Grilled Cheese & Tomato Soup</h3><p class="cafe-desc">Melty cheddar sandwich served with creamy tomato soup – ₹160</p></div>
+            <div class="cafe-item"><h3>Avocado Toast</h3><p class="cafe-desc">Toasted sourdough topped with smashed avocado & chili flakes – ₹140</p></div>
+            <div class="cafe-item"><h3>Classic Club Sandwich</h3><p class="cafe-desc">Triple layered sandwich with chicken, lettuce, tomato & mayo – ₹180</p></div>
+            <div class="cafe-item"><h3>Cheesy Veg Wrap</h3><p class="cafe-desc">Grilled tortilla stuffed with mixed veggies and mozzarella – ₹130</p></div>
+            <div class="cafe-item"><h3>Chocolate Pancakes</h3><p class="cafe-desc">Stack of soft pancakes drizzled with chocolate sauce – ₹110</p></div>
+        </div>
+        <div id="CafeDrinks" class="cafe-panel">
+            <div class="cafe-item"><h3>Espresso</h3><p class="cafe-desc">Rich and intense single shot coffee – ₹60</p></div>
+            <div class="cafe-item"><h3>Café Latte</h3><p class="cafe-desc">Smooth espresso blended with steamed milk – ₹90</p></div>
+            <div class="cafe-item"><h3>Cold Brew</h3><p class="cafe-desc">Chilled coffee brewed over 12 hours – ₹100</p></div>
+            <div class="cafe-item"><h3>Strawberry Milkshake</h3><p class="cafe-desc">Creamy milkshake with real strawberry puree – ₹80</p></div>
+            <div class="cafe-item"><h3>Lemon Iced Tea</h3><p class="cafe-desc">Refreshing chilled black tea with lemon – ₹50</p></div>
+        </div>
+        <div>
+            <img src="./food items.webp" alt="" class="img1">
+        </div>
+    </section>
+
+    <!-- Where Section -->
+    <section class="r1" id="Where">
+        <div class="r2"><center>WHERE TO FIND US?</center></div>
+        <p class="p1">Visit us at Banjara Hills, Hyderabad - "Your Daily Dose of Delight., "Brewed for your Moment., "Coffee. Comfort. Community., "Sip. Savor. Smile., and "Where Coffee Meets Cozy..</p>
+        <div class="add1">
+            <center><img src="./image3.jpg" alt=""></center>
+            <p class="p1">"Our team is equipped to handle catering for parties and events, ensuring a delicious and memorable experience for your guests."</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="box">
+        <form class="form">
+            <input type="text" class="input" placeholder="Name">
+            <input type="number" class="input" placeholder="How many people">
+            <input type="datetime-local" class="input">
+            <textarea class="input" placeholder="Message / Special requests"></textarea>
+            <button type="submit" class="btn">SEND MESSAGE</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© "The Green Brenary and The Day Dream Cafe.", Banjara Hill- Hyderabad, India.</p>
+    </footer>
+
+    <!-- <script>
+        function openMenu(menuName) {
+            var i;
+            var x = document.getElementsByClassName("cafe-panel");
+            var tabs = document.getElementsByClassName("cafe-tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                x[i].classList.remove("cafe-panel-active");
+                tabs[i].classList.remove("cafe-tab-active");
+            }
+            document.getElementById(menuName).style.display = "block";
+            document.getElementById(menuName).classList.add("cafe-panel-active");
+            event.currentTarget.classList.add("cafe-tab-active");
+        }
+    </script> -->
+
+</body>
+</html>
